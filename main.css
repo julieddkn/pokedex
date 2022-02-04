@@ -1,0 +1,138 @@
+/*
+TO DO LIST
+
+- mettre une fleche 'scroll to the top' dans la home page à partir de x pixels
+*/
+
+@font-face {
+    font-family: 'Futura';
+    src: url('https://julieddkn.com/fonts/futura/Futura%20Bold%20font.ttf') format('ttf');
+}
+
+body {
+    padding: 30px;
+    font-family: 'Futura';
+}
+
+.main-title {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 100px auto 130px;
+    font-size: 3rem;
+}
+
+/* CARDS */
+.card {
+    height: 110px;
+    border-radius: 30px;
+    color: white;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+.card-img {
+    position: absolute;
+    height: 110px;
+    max-width: 140px;
+    top: -20px;
+    left: -10px;
+}
+
+.card-name {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    margin-right: 20px;
+}
+
+.card-id {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+/* TYPES  */
+.grass {
+    background-color: rgb(122, 219, 149);
+}
+.fire {
+    background-color: rgb(253, 145, 77);
+}
+.normal {
+    background-color: rgb(221, 210, 205);
+}
+.poison {
+    background-color: rgb(188, 101, 241);
+}
+.psychic {
+    background-color: rgb(199, 110, 186);
+}
+.ground {
+    background-color: rgb(209, 196, 162);
+}
+.ice {
+    background-color: rgb(138, 203, 215);
+}
+.rock {
+    background-color: rgb(158, 138, 114);
+}
+.dragon {
+    background-color: rgb(152, 140, 215);
+}
+.water {
+    background-color: rgb(107, 185, 253);
+}
+.bug {
+    background-color: rgb(205, 216, 147);
+}
+.dark {
+    background-color: rgb(109, 70, 70);
+}
+.fighting {
+    background-color: rgb(204, 138, 114);
+}
+.ghost {
+    background-color: rgb(101, 81, 172);
+}
+.steel {
+    background-color: rgb(140, 140, 140);
+}
+.flying {
+    background-color: rgb(136, 171, 170);
+}
+.electric {
+    background-color: rgb(241, 214, 103);
+}
+.fairy {
+    background-color: rgb(250, 143, 246);
+}
+
+
+/* POKEMON PAGE */
+.pokemon_container {
+    margin: 0 auto;
+}
+.previous_next {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 650px) {
+.card {
+    width: 500px;
+    margin: 30px auto;
+}
+.pokemon_container {
+    width: 400px;
+}
+}
